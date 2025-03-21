@@ -154,12 +154,12 @@ let upInterval, downInterval;
 // Function to send repeated BLE commands
 function startWritingUpButton() {
     writeUpButtonCharacteristic(1);
-    upInterval = setInterval(() => writeUpButtonCharacteristic(1), 40); // Adjust interval as needed
+    upInterval = setInterval(() => writeUpButtonCharacteristic(1), 50); // Adjust interval as needed
 }
 
 function startWritingDownButton() {
     writeDownButtonCharacteristic(1);
-    downInterval = setInterval(() => writeDownButtonCharacteristic(1), 40);
+    downInterval = setInterval(() => writeDownButtonCharacteristic(1), 50);
 }
 
 // Function to stop sending BLE commands
